@@ -6,5 +6,7 @@
 
 module.exports = {
   siteName: 'Thamizharasu',
+  siteUrl: 'https://zarub2k.github.io/thamizharasu',
+  pathPrefix: '/master',
   plugins: []
 }
