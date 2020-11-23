@@ -15,3 +15,4 @@ This is the project you get when you run `gridsome create new-project`.
 
 ### Reference
 https://webdevetc.com/blog/gridsome-markdown-blog/
+https://braincoke.fr/blog/2020/03/gridsome-tailwind-and-other-post-css/#importing-files
