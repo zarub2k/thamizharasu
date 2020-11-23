@@ -41,5 +41,8 @@ module.exports = {
       externalLinksRel: ['noopener', ],
       anchorClassName: 'icon icon-link'
     }
-  }
+  },
+  chainWebpack: config => { //changes done for dynamic image loacing for Blog
+    config.resolve.alias.set('@images', '@/assets')
+  },
 }

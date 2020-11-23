@@ -2,6 +2,7 @@
   <Layout>
     <div class="grid grid-cols-4 gap-4">
       <div v-for="post in $page.posts.edges" :key="post.id" >
+        <g-image alt="Example image" :src="require(`!!assets-loader!@images/${post.node.thumbnail}`)" width="150" />
         <h2 class="text-xl font-medium text-black">
           <g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link>
         </h2>
@@ -35,7 +36,8 @@ query Posts ($page: Int) {
         title
         date (format: "MMMM D, Y")
         summary
-        path
+        path,
+        thumbnail
       }
     }
   }
