@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <article v-for="post in $page.posts.edges" :key="post.id" >
-      <h2><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
-      <p>Posted on <time :datetime="post.node.date">{{ post.node.date }}</time></p>
+  <Layout>
+    <div>
+      <article v-for="post in $page.posts.edges" :key="post.id" >
+        <h2><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
+        <p>Posted on <time :datetime="post.node.date">{{ post.node.date }}</time></p>
 
-      <p>{{ post.node.summary }}</p>
-    </article>
-  </div>
+        <p>{{ post.node.summary }}</p>
+      </article>
+    </div>
+  </Layout>
 </template>
 
 <script>
