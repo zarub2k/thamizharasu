@@ -12,6 +12,9 @@
       </nav>
     </header>
     <slot/>
+    <footer>
+      &copy;2020 Thamizharasu
+    </footer>
   </div>
 </template>
 
@@ -24,7 +27,7 @@ query {
 </static-query>
 
 <style>
-body {
+/* body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
   padding:0;
@@ -48,5 +51,5 @@ body {
 
 .nav__link {
   margin-left: 20px;
-}
+} */
 </style>
