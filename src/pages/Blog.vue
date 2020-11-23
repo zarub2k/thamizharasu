@@ -2,8 +2,8 @@
   <Layout>
     <div>
       <article v-for="post in $page.posts.edges" :key="post.id" >
-        <h2><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
-        <p>Posted on <time :datetime="post.node.date">{{ post.node.date }}</time></p>
+        <h2 class="text-xl font-medium text-black"><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
+        <p class="text-xs text-gray-500">Posted on <time :datetime="post.node.date">{{ post.node.date }}</time></p>
 
         <p>{{ post.node.summary }}</p>
       </article>
