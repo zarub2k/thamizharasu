@@ -1,10 +1,10 @@
 <template>
-  <div class="grid grid-cols-2 gap-4">
-    <div class="">
+  <div class="grid grid-cols-2">
+    <div class="bg-gray-500">
       <header>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        <g-link class="align-middle" to="/">{{ $static.metadata.siteName }}</g-link>
       </header></div>
-    <div class="">
+    <div class="bg-gray-500">
       <div class="flex">
         <div class="flex-1"><g-link class="" to="/">Home</g-link></div>
         <div class="flex-1"><g-link class="nav__link" to="/blog/">Blog</g-link></div>
