@@ -1,12 +1,24 @@
 <template>
   <Layout>
+    <h1 class="text-2xl mb-2 text-pink-900">
+      Popular articles
+    </h1>
     <div class="grid grid-cols-4 gap-4">
       <div v-for="post in $page.posts.edges" :key="post.id">
-        <div class="border-gray-500">
+        <div class="border border-gray-200">
           <g-image alt="Example image" :src="require(`!!assets-loader!@images/${post.node.thumbnail}`)" width="150" />
-          <p class="text-xs text-gray-400">
-            <time :datetime="post.node.date">{{ post.node.date }}</time>
-          </p>
+          <div class="p-2">
+            <p class="text-xs text-gray-400 py-2">
+              <time :datetime="post.node.date">{{ post.node.date }}</time>
+            </p>
+            <h2 class="text-xl text-pink-400">
+              <g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link>
+            </h2>
+            <p class="text-gray-600 text-xs">{{ post.node.summary }}</p>
+            <div class="mt-2">
+              <div class="bg-gray-200 rounded-full h-8 w-8 flex items-center justify-center">T</div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- <div v-for="post in $page.posts.edges" :key="post.id" >
