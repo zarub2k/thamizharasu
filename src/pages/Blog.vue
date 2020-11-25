@@ -19,7 +19,7 @@
               <div class="flex">
                 <img class="w-12 h-12 rounded-full my-auto" src="../assets/tham.png" alt="">
                 <div class="ml-2">
-                  <span class="block text-sm">Tham</span>
+                  <span class="block text-sm text-gray-500">Tham</span>
                   <span class="block text-xs text-gray-400">Speaker | Growth coach</span>
                 </div>
               </div>
