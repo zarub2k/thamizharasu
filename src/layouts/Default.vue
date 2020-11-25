@@ -3,10 +3,10 @@
     <div class="grid grid-cols-2">
       <div class="bg-gray-500 p-3">
         <header>
-          <g-link class="text-2xl text-gray-200" to="/">{{ $static.metadata.siteName }}</g-link>
+          <g-link class="text-2xl text-gray-200 my-auto" to="/">{{ $static.metadata.siteName }}</g-link>
         </header>
       </div>
-      <div class="flex bg-gray-500 text-gray-200 content-center p-3">
+      <div class="flex bg-gray-500 text-gray-200 p-3 my-auto">
         <div class="flex-1"><g-link class="" to="/">Home</g-link></div>
         <div class="flex-1"><g-link class="" to="/blog/">Blog</g-link></div>
         <div class="flex-1"><g-link class="" to="/about/">About</g-link></div>

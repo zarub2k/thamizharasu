@@ -11,12 +11,19 @@
             <p class="text-xs text-gray-400 py-2">
               <time :datetime="post.node.date">{{ post.node.date }}</time>
             </p>
-            <h2 class="text-xl text-pink-400">
+            <h2 class="text-lg text-pink-400">
               <g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link>
             </h2>
-            <p class="text-gray-600 text-xs">{{ post.node.summary }}</p>
+            <p class="text-gray-600 text-sm">{{ post.node.summary }}</p>
             <div class="mt-2">
-              <div class="bg-gray-200 rounded-full h-8 w-8 flex items-center justify-center">T</div>
+              <div class="flex">
+                <img class="w-12 h-12 rounded-full my-auto" src="../assets/tham.png" alt="">
+                <div class="ml-2">
+                  <span class="block text-sm">Tham</span>
+                  <span class="block text-xs text-gray-400">Speaker | Growth coach</span>
+                </div>
+              </div>
+              <!-- <div class="bg-gray-200 rounded-full h-8 w-8 flex items-center justify-center">T</div> -->
             </div>
           </div>
         </div>
