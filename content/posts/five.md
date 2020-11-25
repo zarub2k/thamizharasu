@@ -10,3 +10,20 @@ description: "Markdown is intended to be as easy-to-read and easy-to-write as is
 ---
 
 ## Five blog
+
+### Lists
+
+Markdown supports ordered (numbered) and unordered (bulleted) lists.
+
+Unordered lists use asterisks, pluses, and hyphens -- interchangably
+-- as list markers:
+
+*   Red
+*   Green
+*   Blue
+
+is equivalent to:
+
++   Red
++   Green
++   Blue

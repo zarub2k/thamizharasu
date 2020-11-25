@@ -34,12 +34,18 @@ module.exports = {
         },
     },
   },
+  templates: {
+    Post: '/blog/:path',
+  },
   transformers: {
     remark: {
       autolinkClassName: 'icon icon-link heading-anchor',
       externalLinksTarget: '_blank',
       externalLinksRel: ['noopener', ],
-      anchorClassName: 'icon icon-link'
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
     }
   },
   chainWebpack: config => { //changes done for dynamic image loacing for Blog
