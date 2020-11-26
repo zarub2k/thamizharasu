@@ -4,7 +4,7 @@
       <h2 class="text-2xl mb-2 text-pink-900">
         Recently published
       </h2>
-      <div class="grid grid-cols-4 gap-3">
+      <div class="grid grid-cols-3 gap-3">
         <div v-for="post in $page.posts.edges" :key="post.id">
           <div class="border border-gray-200">
             <g-image alt="Example image" :src="require(`!!assets-loader!@images/${post.node.thumbnail}`)" width="150" />

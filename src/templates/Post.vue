@@ -4,7 +4,13 @@
         <h1 class="text-4xl">{{ $page.post.title }} </h1>
         <p class="text-gray-400 text-sm my-2">Posted on {{ $page.post.date }}</p>
         <div class="grid grid-cols-4 gap-4">
-          <article class="col-start-1 col-end-4 prose max-w-none" v-html="$page.post.content" />
+          <div class="col-start-1 col-end-4">
+            <article class="col-start-1 col-end-4 prose max-w-none" v-html="$page.post.content" />
+            <div class="border">
+              Author box
+            </div>
+          </div>
+            
           <div class="border">
             <div class="border">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
