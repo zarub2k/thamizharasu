@@ -6,11 +6,22 @@
         <div class="grid grid-cols-4 gap-4">
           <div class="col-start-1 col-end-4">
             <article class="col-start-1 col-end-4 prose max-w-none" v-html="$page.post.content" />
-            <div class="border">
-              Author box
+            <div class="border mt-5">
+              <h3>About Tham</h3>
+              <div class="flex">
+                <div class="flex-shrink-0 mr-5">
+                  <img class="w-24 h-24 rounded-full my-auto" src="../assets/tham.png" alt="">
+                </div>
+                <div>
+                  <span class="block">
+                    Thamizharasu is an API Evangalist, Growth coach and open community contributor. Passionate about technology and business growth coaching.
+                  </span>
+                  <span class="block">Social icons</span>
+                </div>
+              </div>
             </div>
           </div>
-            
+
           <div class="border">
             <div class="border">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
