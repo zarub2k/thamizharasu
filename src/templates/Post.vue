@@ -4,9 +4,7 @@
         <h1 class="text-4xl">{{ $page.post.title }} </h1>
         <p class="text-gray-400 text-sm my-2">Posted on {{ $page.post.date }}</p>
         <div class="grid grid-cols-4 gap-4">
-          <div class="col-start-1 col-end-4 border markdown-body">
-            <article v-html="$page.post.content" />
-          </div>
+          <article class="col-start-1 col-end-4 prose max-w-none" v-html="$page.post.content" />
           <div class="border">
             <div class="border">
               Author box

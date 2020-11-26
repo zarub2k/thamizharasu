@@ -13,7 +13,7 @@ description: "Markdown is intended to be as easy-to-read and easy-to-write as is
 
 ### Lists
 
-Markdown supports ordered (numbered) and unordered (bulleted) lists.
+Markdown supports ordered (numbered) and unordered (bulleted) lists. This is an extended view
 
 Unordered lists use asterisks, pluses, and hyphens -- interchangably
 -- as list markers:
@@ -27,3 +27,20 @@ is equivalent to:
 +   Red
 +   Green
 +   Blue
+
+[Here is the link](https://github.com/tailwindlabs/tailwindcss-typography)
+
+ampersands and angle brackets. For example, this:
+
+    <div class="footer">
+        &copy; 2004 Foo Corporation
+    </div>
+
+Regular Markdown syntax is not processed within code blocks. E.g., asterisks are just literal asterisks within a code block. This means
+it's also easy to use Markdown to write about Markdown's own syntax.
+
+```
+tell application "Foo"
+    beep
+end tell
+```
