@@ -7,6 +7,9 @@
           <article class="col-start-1 col-end-4 prose max-w-none" v-html="$page.post.content" />
           <div class="border">
             <div class="border">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+              </svg>
               Author box
             </div>
             <div class="border">
